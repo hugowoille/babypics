@@ -180,9 +180,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -193,6 +193,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -209,11 +210,11 @@ textarea {
   }
 
   a[href]::after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
 
   abbr[title]::after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
 
   /*
@@ -260,60 +261,58 @@ textarea {
     page-break-after: avoid;
   }
 }
-.container{
 
+#yo .container {
   display:grid;
+  width:100vw;
   height:100vh;
-  grid-gap:1vh;
-  width: 90vw;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-template-areas: 
-  "photo1 photo2 photo3 photo3"
-  "photo1 photo4 photo4 photo5"
-  "photo6 photo6 photo6 photo5"
-  "photo6 photo6 photo6 photo5"
-  "photo7 photo7 photo8 photo8";
-  
- 
-}
-.article1{
-
-  grid-area: photo1;
-  background-color: red;
-}
-.article2{
-  grid-area: photo2;
-  background-color: rgb(53, 187, 41);
-}
-.article3{
-  grid-area: photo3;
-  background-color: rgb(164, 218, 38);
-}
-.article4{
-  grid-area: photo4;
-  background-color: rgb(48, 32, 196);
-}
-.article5{
-  grid-area: photo5;
-  background-color: rgb(230, 30, 186);
-}
-.article6{
-  grid-area: photo6;
-  background-color: rgb(105, 248, 188);
-}
-.article7{
-  grid-area: photo7;
-  background-color: rgb(142, 19, 212);
-}
-.article8{
-  grid-area: photo8;
-  background-color: rgb(51, 156, 74);
-}
-body{
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
+  gap:10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "img1 img2 img3 img3"
+    "img1 img4 img4 img5"
+    "img6 img6 img6 img5"
+    "img6 img6 img6 img5"
+    "img7 img7 img8 img8";
 }
 
+#yo .container .img1 {
+  grid-area: img1;
+  background-color: aqua;
+}
+
+#yo .container .img2 {
+  grid-area: img2;
+  background-color: rgb(52, 163, 52);
+}
+
+#yo .container .img3 {
+  grid-area: img3;
+  background-color: rgb(68, 0, 255);
+}
+
+#yo .container .img4 {
+  grid-area: img4;
+  background-color: rgb(255, 38, 0);
+}
+
+#yo .container .img5 {
+  grid-area: img5;
+  background-color: rgb(247, 0, 255);
+}
+
+#yo .container .img6 {
+  grid-area: img6;
+  background-color: rgb(255, 145, 0);
+}
+
+#yo .container .img7 {
+  grid-area: img7;
+  background-color: rgb(245, 248, 32);
+}
+
+#yo .container .img8 {
+  grid-area: img8;
+  background-color: rgb(136, 20, 126);
+}
