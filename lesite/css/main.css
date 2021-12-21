@@ -172,13 +172,13 @@ footer P{
 
 .mainstudio{
     display:grid;
-    
     grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows: 5rem 1fr 1fr;
+    grid-template-rows: 5rem 1fr 1fr 0.5fr;
     grid-template-areas: 
     "h1stud h1stud h1stud"
-    "mainimgstud mainimgstud pstud"
-    "mainimgstud mainimgstud pstud"
+    "mainimgstud mainimgstud mainimgstud"
+    "mainimgstud mainimgstud mainimgstud"
+    "pstud pstud pstud"
     ;
 }
 .mainstudio h1{
@@ -188,7 +188,10 @@ footer P{
 }
 .mainstudio .mainimgstud{
     grid-area: mainimgstud;
-
+    width: 60%;
+    object-fit: cover;
+    justify-self: center;
+    align-self: center;
 }
 .mainstudio p{
     grid-area: pstud;
@@ -197,14 +200,107 @@ footer P{
     text-align: center;
     
 }
-img{
+.mainstudio .parensectionstud .sectionstud{
+  
+   width:80vw;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: 
+   "stud1 stud2 stud3"
+   "stud4 stud5 stud6";
+}
+.mainstudio section article img{
+  width:100%
+}
+.mainstudio section .articlestudio1{
+    grid-area: stud1;
+    object-fit: cover;
+}
+.mainstudio section .articlestudio2{
+    grid-area: stud2;
+    object-fit: cover;
+    width: 100%;
+}
+.mainstudio section .articlestudio3{
+    grid-area: stud3;
+    object-fit: cover;
+    width: 100%;
+}
+.mainstudio section .articlestudio4{
+    grid-area: stud4;
+    object-fit: cover;
+    width: 100%;
+}
+.mainstudio section .articlestudio5{
+    grid-area: stud5;
+    object-fit: cover;
+    width: 100%;
+}
+.mainstudio section .articlestudio6{
+    grid-area: stud6;
+    object-fit: cover;
+    width: 100%;
+}
+.mainstudio section .articlestudio1 img{
     width: 100%;
     object-fit: cover;
 }
 
+/****************************** GALERIE ***********************/
 
+.containergal section{
+    display:grid;
+    width:100vw;
+    height:100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "img1 img2 img3 img3"
+        "img1 img4 img4 img5"
+        "img6 img6 img6 img5"
+        "img6 img6 img6 img5"
+        "img7 img7 img8 img8";
+}
 
+.containergal section .img1 {
+    grid-area: img1;
+    object-fit: cover;
+}
 
+.containergal section .img2 {
+    grid-area: img2;
+    object-fit: cover;
+}
+
+.containergal section .img3 {
+    grid-area: img3;
+    object-fit: cover;
+}
+
+.containergal section .img4 {
+    grid-area: img4;
+    object-fit: cover;
+}
+
+.containergal section .img5 {
+    grid-area: img5;
+    object-fit: cover;
+}
+
+.containergal section .img6 {
+    grid-area: img6;
+    object-fit: cover;
+}
+
+.containergal section .img7 {
+    grid-area: img7;
+    object-fit: cover;
+}
+
+.containergal section .img8 {
+    grid-area: img8;
+    object-fit: cover;
+}
 
 /*********************************************** GALERIE ***********************************************/
 /**
