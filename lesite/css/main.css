@@ -168,6 +168,39 @@ footer P{
 
 
 
+/***************** STUDIO ***************/
+
+.mainstudio{
+    display:grid;
+    
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 5rem 1fr 1fr;
+    grid-template-areas: 
+    "h1stud h1stud h1stud"
+    "mainimgstud mainimgstud pstud"
+    "mainimgstud mainimgstud pstud"
+    ;
+}
+.mainstudio h1{
+    grid-area: h1stud;
+    align-self: center;
+    justify-self: center;
+}
+.mainstudio .mainimgstud{
+    grid-area: mainimgstud;
+
+}
+.mainstudio p{
+    grid-area: pstud;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
 
 
 
