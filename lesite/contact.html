@@ -57,4 +57,39 @@
       </ul>
     </nav>
   </header>
+  <H1>Formulaire</H1>
+  <form class="monform" action="contact.html">
+    <div>
+        <label for="firstnameinput">Votre prénom</label><br>
+        <input class="input1" type="text" name="prénom" id="firstnameinput">
+    </div>
+    <div>
+        <label for="nameinput">Votre nom</label><br>
+        <input class="input1" type="text" name="nom" id="nameinput">
+    </div>
+    <div>
+        <label for="ageinput">Votre âge</label><br>
+        <input class="input1" type="text" name="age" id="ageinput" maxlength="2">
+    </div>
+    <div>
+        <label name="sexe">Votre sexe</label><br>
+        <input type="radio" name="sexe" id="masculin">
+        <label for="masculin">masculin</label>
+
+        <input type="radio" name="sexe" id="feminin">
+        <label for="feminin">feminin</label>
+    </div>
+    <div>
+        <label for="emailadress">votre adresse email</label><br>
+        <input class="input1" type="text" name="mail" id="emailadress" placeholder="exemple@gmail.com" email="">
+    </div>
+    <div>
+      <label for="">Votre message</label><br>
+      <input id="messa" class="input1" height="300" type="text">
+  </div>
+    <input type="submit" value="envoyer">
+</form>
+<footer class="footercontact">
+  <p>conçu par Hugo woille 2021</p>
+</footer>
 </body>

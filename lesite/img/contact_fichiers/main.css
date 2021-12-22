@@ -479,29 +479,7 @@ footer P{
     top:15vh;
 }
 
-/**************************** FORMULAIRE ************************/
-.monform{
-    margin:0 auto;
-    text-align: center;
-}
-.monform div input{
-    text-align: center;
-}
-.monform label{
-    text-align: center;
-    margin:0 auto;
-}
-.input1{
- width: 40vw;
-}
-#messa{
-    height:20vw;
-}
-.footercontact{
-    position: absolute;
-    width:100vw;
-    bottom:0;
-}
+
 
 /*********************************************** GALERIE ***********************************************/
 /**
