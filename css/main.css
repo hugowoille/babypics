@@ -210,14 +210,17 @@ footer P {
     grid-area: h1stud;
     align-self: center;
     justify-self: center;
+    margin-right:75vw;
 }
 
 .mainstudio .mainimgstud {
     grid-area: mainimgstud;
-    width: 100%;
+    width: 40vw;
     object-fit: cover;
     justify-self: center;
     align-self: center;
+    margin-right:75vw;
+   
 }
 
 .mainstudio p {
@@ -228,7 +231,8 @@ footer P {
     width: 50VW;
     border: 1px solid black;
     padding: 1vw;
-
+    margin-right:75vw;
+    margin-bottom:20vh;
 }
 
 .photostudio {
